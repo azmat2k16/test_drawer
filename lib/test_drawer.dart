@@ -17,10 +17,10 @@ class TestDrawer extends StatelessWidget {
           decoration: const BoxDecoration(
               image: DecorationImage(
                   image: AssetImage(
-                    // 'assets/bg_4.png',
+                    'assets/bg_4.png',
                     // 'assets/bg_2.jpg',
                     // 'assets/bg_3.jpg',
-                    'assets/bg_1.jpg',
+                    // 'assets/bg_1.jpg',
                   ),
                   fit: BoxFit.cover)),
           child: SingleChildScrollView(
@@ -85,6 +85,7 @@ class TestDrawer extends StatelessWidget {
     return ExpansionTile(
         tilePadding: const EdgeInsets.all(0),
         collapsedBackgroundColor: Colors.transparent,
+        collapsedIconColor: Colors.white,
         leading: const Icon(Icons.psychology_outlined, color: Colors.white),
         title: Text(title,
             style: const TextStyle(
